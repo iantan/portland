@@ -1,0 +1,18 @@
+docker version
+docker info
+docker run hello-world
+docker ps
+docker ps -a
+docker images
+docker pull ubuntu
+docker pull ubuntu:14.04
+docker rmi ubuntu:14.04 (remove image)
+docker start <container>
+docker stop <container>
+docker run -d --name web -p 80:8080 nigelpoulton/pluralsight-docker-ci
+docker run -it --name temp ubuntu:latest /bin/bash
+Ctrl+P+Q (exit container)
+docker stop $(docker ps -aq) (stop all containers)
+docker rm $(docker ps -aq) (remove all containers)
+docker rmi $(docker images -q) (remove all images)
+docker build -t iantan/soegerhvervforsikringsaftalermock .
